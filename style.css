@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    background: #9ccdf3;
+    height: 470px;
+    width: 90%;
+    padding: 10px;
+}
+nav{
+    background: #e1effa;
+    padding: 15px;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+.container .amount {
+    width: 100%;
+    margin-top: 15px;
+    padding: 5px;
+    text-align: center;
+}
+.container .amount input{
+    width: 50%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #999;
+    margin-top: 10px;
+    background: #e1effa;
+    color: #007fc3;
+}
+.container .amount input::placeholder{
+    color: #007fc3;
+}
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+}
+
+.container .percentage {
+    width: 100%;
+    padding: 20px 10px;
+    margin-top: 15px;
+    text-align: center;
+}
+.container .percentage span{
+    margin-bottom: 15px;
+}
+.container .percentage small{
+    color: #007fc3;
+    font-family: cursive;
+    font-size: 18px;
+    margin-left: 10px;
+}
+.container .percentage #range {
+    width: 80%;
+    -webkit-appearance: none;
+    outline: none;
+    background: #e1effa;
+    border-radius: 25px;
+    height: 10px;
+}
+.container .percentage #range::-webkit-slider-thumb{
+    background: #007fc3;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #007fc3;
+    border-radius: 50%;
+}
+.container .result{
+    margin-top: 15px;
+    padding: 10px;
+    height: 100px;
+    text-align: center;
+    font-family: monospace;
+}
+.container .result span{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+.container .result .output{
+    height: 50px;
+    margin: 0px 50px 0px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+.container .result .output h2{
+    color: #007fc3; 
+    font-weight: 900;
+    font-size: 35px;
+}
+.container .author{
+    text-align: center;
+    font-family: cursive;
+}
+
+@media screen and (min-width: 800px) {
+    .container{
+        width: 30%;
+    }
+}
